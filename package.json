@@ -1,0 +1,22 @@
+{
+  "name": "alton",
+  "version": "1.0.0",
+  "description": "a config object module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MathisTLD/alton.git"
+  },
+  "author": "Mathis TLD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathisTLD/alton/issues"
+  },
+  "homepage": "https://github.com/MathisTLD/alton#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
