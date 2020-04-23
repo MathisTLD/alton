@@ -4,7 +4,8 @@
   "description": "a config object module",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./test.js",
+    "preversion": "npm run test",
     "postversion": "npm publish && git push && git push --tags"
   },
   "repository": {
