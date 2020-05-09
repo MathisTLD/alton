@@ -46,13 +46,16 @@ Alton.registerFormat("port", {
   // validate is a method that is called in order to ensure that a value matches a format
   // this method must throw an error if the value is incorrect
   validate(val) {
-    if (Number.prototype.toString.call(val) !== val.toString()) throw new Error("port must be a number")
-    if (Math.floor(val) !== val) throw new Error("port number must be an integer")
-    if (!(0<=val && val<=65535) throw new Error(`${val} is not a valid port number`)
+    if (Number.prototype.toString.call(val) !== val.toString())
+      throw new Error("port must be a number");
+    if (Math.floor(val) !== val)
+      throw new Error("port number must be an integer");
+    if (!(0 <= val && val <= 65535))
+      throw new Error(`${val} is not a valid port number`);
   },
-  coerce(val){
+  coerce(val) {
     // val comes from an env var so it's a string here let's convert it to a number
-    return Number(val)
+    return Number(val);
   }
 });
 ```
