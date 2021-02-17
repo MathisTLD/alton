@@ -1,6 +1,6 @@
 {
   "name": "alton",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a config object module",
   "main": "lib/index.js",
   "scripts": {
